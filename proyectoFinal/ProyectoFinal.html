@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Esto hace que se vea bien en celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotus 79 (F1) — Página simple</title>
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ENCABEZADO sencillo con dos botones -->
+  <header>
+    <h1>Lotus 79 — “Black Beauty”</h1>
+
+    <!-- Botones con interactividad básica (definida en app.js) -->
+    <button id="btnTema">Cambiar tema</button>
+    <button id="btnDato">Dato curioso</button>
+  </header>
+
+  <!-- Contenedor para que el texto no ocupe todo el ancho -->
+  <div class="contenedor">
+    <!-- DESCRIPCIÓN -->
+    <section>
+      <h2>Descripción</h2>
+      <p>
+        El <strong>Lotus 79</strong> fue un auto de Fórmula 1 de 1978 famoso por
+        aprovechar el <em>efecto suelo</em>. Con él, <strong>Mario Andretti</strong>
+        ganó el campeonato de pilotos y <strong>Lotus</strong> el de constructores.
+      </p>
+
+      <!-- IMÁGENES (de Wikimedia Commons) -->
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Lotus_79_at_Barber_01.jpg"
+        alt="Lotus 79 en pista"
+      >
+      <p class="nota">Foto: Wikimedia Commons (CC BY-SA 2.0)</p>
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Lotus_79_venturi_tunnels.JPG"
+        alt="Túneles venturi del Lotus 79"
+      >
+      <p class="nota">Foto: Wikimedia Commons (CC BY-SA 3.0)</p>
+    </section>
+
+    <!-- ESPECIFICACIONES en una tabla muy simple -->
+    <section>
+      <h2>Especificaciones (resumen)</h2>
+      <table>
+        <tr>
+          <th>Chasis</th>
+          <td>Monocasco de aluminio</td>
+        </tr>
+        <tr>
+          <th>Motor</th>
+          <td>Ford-Cosworth DFV 3.0L V8 (~480–500 hp)</td>
+        </tr>
+        <tr>
+          <th>Caja</th>
+          <td>Hewland de 5 marchas</td>
+        </tr>
+        <tr>
+          <th>Peso</th>
+          <td>≈ 580–610 kg</td>
+        </tr>
+        <tr>
+          <th>Aerodinámica</th>
+          <td>Efecto suelo con túneles venturi</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- HISTORIA en lista simple -->
+    <section>
+      <h2>Historia breve</h2>
+      <ul>
+        <li><strong>1977:</strong> Desarrollo del concepto de efecto suelo.</li>
+        <li><strong>1978:</strong> Dominio total; títulos de Pilotos (Andretti) y Constructores (Lotus).</li>
+        <li><strong>1979:</strong> Menos competitivo frente a nuevos rivales.</li>
+      </ul>
+    </section>
+
+    <!-- PILOTOS en bloques de párrafo simples -->
+    <section>
+      <h2>Pilotos</h2>
+      <p><strong>Mario Andretti:</strong> Campeón del Mundo 1978 con el 79.</p>
+      <p><strong>Ronnie Peterson:</strong> Clave en el desarrollo; subcampeón 1978.</p>
+      <p><strong>Carlos Reutemann:</strong> Corrió con Lotus en 1979 y sumó podios.</p>
+    </section>
+
+    <!-- RESULTADOS en tabla sencilla -->
+    <section>
+      <h2>Resultados en F1 (resumen)</h2>
+      <table>
+        <tr>
+          <th>Año</th>
+          <th>Equipo</th>
+          <th>Pilotos</th>
+          <th>Constructores</th>
+        </tr>
+        <tr>
+          <td>1978</td>
+          <td>Team Lotus</td>
+          <td>Andretti, Peterson</td>
+          <td>1º</td>
+        </tr>
+        <tr>
+          <td>1979</td>
+          <td>Team Lotus</td>
+          <td>Andretti, Reutemann</td>
+          <td>4º</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- DATO CURIOSO (el texto se reemplaza desde app.js) -->
+    <section>
+      <h2>Dato curioso</h2>
+      <p id="salidaDato">Pulsa el botón “Dato curioso” para ver uno aquí.</p>
+    </section>
+
+    <!-- Créditos muy básicos -->
+    <section>
+      <h2>Créditos de imágenes</h2>
+      <p>
+        Imágenes de Wikimedia Commons:
+        <a href="https://commons.wikimedia.org/wiki/File:Lotus_79_at_Barber_01.jpg" target="_blank">Foto 1</a>,
+        <a href="https://commons.wikimedia.org/wiki/File:Lotus_79_venturi_tunnels.JPG" target="_blank">Foto 2</a>.
+      </p>
+    </section>
+  </div>
+
+  <!-- Pie simple -->
+  <footer>
+    <p>Página educativa simple — HTML + CSS + JS básico.</p>
+  </footer>
+
+  <!-- Enlace al JS -->
+  <script src="app.js"></script>
+</body>
+</html>

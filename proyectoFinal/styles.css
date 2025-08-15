@@ -1,0 +1,97 @@
+/* Color y fuente general */
+body {
+  background: #f4f4f4;   /* gris claro */
+  color: #222;           /* texto oscuro */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;             /* quitamos márgenes del navegador */
+}
+
+/* Encabezado simple */
+header {
+  background: #222;  /* negro suave */
+  color: white;
+  padding: 12px;
+}
+
+/* Botones básicos (mismos estilos para ambos) */
+button {
+  background: white;
+  color: #222;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #eee; /* pequeño feedback al pasar el mouse */
+}
+
+/* Contenedor para no usar todo el ancho de la pantalla */
+.contenedor {
+  max-width: 800px;   /* ancho máximo */
+  margin: 12px auto;  /* centrado horizontal */
+  padding: 0 10px;    /* un poco de espacio a los lados */
+}
+
+/* Títulos con una línea a la izquierda para distinguir las secciones */
+h2 {
+  border-left: 4px solid #d4af37; /* dorado simple */
+  padding-left: 8px;
+}
+
+/* Imagenes: que no se salgan del ancho del contenedor */
+img {
+  max-width: 100%; /* hace que la imagen se ajuste al ancho disponible */
+  height: auto;    /* mantiene la proporción */
+  display: block;  /* quita espacios raros abajo de imágenes inline */
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.nota {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Tablas muy simples (bordes y espacio interno) */
+table {
+  width: 100%;
+  border-collapse: collapse; /* une los bordes de celdas */
+  margin-top: 8px;
+  background: white;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background: #fafafa;
+}
+
+/* Pie de página simple */
+footer {
+  text-align: center;
+  color: #666;
+  padding: 16px 0 30px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+/* ===== Tema oscuro muy básico (se activa con .oscuro en <body>) ===== */
+body.oscuro {
+  background: #111; /* fondo oscuro */
+  color: #eee;      /* texto claro */
+}
+body.oscuro header {
+  background: #000; /* encabezado aún más oscuro */
+}
+body.oscuro table {
+  background: #222; /* tabla con fondo oscuro */
+}
+body.oscuro th, body.oscuro td {
+  border-color: #444;
+}
+body.oscuro a {
+  color: #9dc1ff;   /* enlaces visibles en oscuro */
+}
